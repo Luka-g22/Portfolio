@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/themes.css" />
+    <link rel="stylesheet" href="css/hobbies.css" />
+    <link rel="stylesheet" href="css/experiencia.css" />
+    <link rel="stylesheet" href="css/formacion.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+    <script
+      src="https://kit.fontawesome.com/795aa91ce6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mi Portafolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a class="header__icon" href="#">
+          <img class="header__icon__avatar" src="assets/profile.jpeg" />
+          <span class="header__icon__name"><span>Luca Guerrero</span></span>
+        </a>
+        <nav class="header__nav">
+          <button class="nav__toggle_btn btn" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="nav__menu">
+            <ul class="nav__menu__list">
+              <li class="nav__menu__link">
+                <a href="#sobre-mi"> <span class="nav__num">01</span>sobre mi</a>
+              </li>
+              <li class="nav__menu__link">
+                <a href="#skills"><span class="nav__num">02</span>skills</a>
+              </li>
+              <li class="nav__menu__link">
+                <a href="#hobbies"><span class="nav__num">03</span>hobbies</a>
+              </li>
+              <li class="nav__menu__link">
+                <a href="#formacion"><span class="nav__num">04</span>formación</a>
+              </li>
+              <li class="nav__menu__link">
+                <a href="#experiencia"><span class="nav__num">05</span>proyectos</a>
+              </li>
+            </ul>
+          </div>
+          <button class="nav__color_btn btn" onclick="myFunction()">
+            <i class="fa-solid fa-bolt"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="main container">
+      <section class="about fade-in" id="sobre-mi">
+        <div class="about__inner">
+          <h1 class="about__title">Y hago websites.</h1>
+          <p class="about__pretitle">
+            <a href="#about">Hola, mi nombre es Luca</a>
+          </p>
+          <p class="about__content">
+            Soy un front-end developer de Argentina en continuo aprendizaje. Actualmente estoy
+            participando en el proyecto Oracle ONE en Alura Latam.
+          </p>
+        </div>
+      </section>
+      <a class="cv_btn" href="cv.pdf" download
+        ><strong>Curriculum Vitae</strong><img src="assets/arrow.png" alt=""
+      /></a>
+      <section class="skills" id="skills">
+        <h3 class="skills__title">Skills</h3>
+        <div class="skills__inner">
+          <ul class="skills__box">
+            <li class="skills__img"><i class="fa-brands fa-html5"></i></li>
+            <li class="skills__name">HTML 5</li>
+          </ul>
+          <ul class="skills__box">
+            <li class="skills__img"><i class="fa-brands fa-css3-alt"></i></li>
+            <li class="skills__name">CSS</li>
+          </ul>
+          <ul class="skills__box">
+            <li class="skills__img"><i class="fa-brands fa-js"></i></li>
+            <li class="skills__name">Javascript</li>
+          </ul>
+          <ul class="skills__box">
+            <li class="skills__img"><i class="fa-brands fa-node"></i></li>
+            <li class="skills__name">Node JS</li>
+          </ul>
+          <ul class="skills__box">
+            <li class="skills__img"><i class="fa-brands fa-react"></i></li>
+            <li class="skills__name">React</li>
+          </ul>
+        </div>
+      </section>
+      <section class="hobbies" id="hobbies">
+        <h3 class="hobbies__title">Hobbies</h3>
+        <div class="hobbies__line">
+          <ul class="hobbies__box">
+            <li class="hobbies__img"><i class="fa-solid fa-headphones"></i></li>
+            <li class="hobbies__name">Escuchar música</li>
+          </ul>
+          <ul class="hobbies__box">
+            <li class="hobbies__img"><i class="fa-solid fa-microphone-lines"></i></li>
+            <li class="hobbies__name">Cantar</li>
+          </ul>
+          <ul class="hobbies__box">
+            <li class="hobbies__img"><i class="fa-solid fa-mug-hot"></i></li>
+            <li class="hobbies__name">Tomar Cafe</li>
+          </ul>
+          <ul class="hobbies__box">
+            <li class="hobbies__img"><i class="fa-solid fa-tv"></i></li>
+            <li class="hobbies__name">Ver series</li>
+          </ul>
+        </div>
+      </section>
+      <section class="formacion" id="formacion">
+        <h2 class="formacion__title">Formación académica</h2>
+        <div class="formacion__courses">
+          <div class="formacion__courses__box">
+            <ul class="formacion__courses__list">
+              <li class="formacion__courses__item__img">
+                <img src="assets/arg_pro_logo.png" />
+              </li>
+              <li class="formacion__courses__item__title">
+                <h4>#YoProgramo 2da edición</h4>
+              </li>
+              <li class="formacion__courses__item__subtitle">
+                <p>2018 - Argentina Programa</p>
+              </li>
+            </ul>
+          </div>
+          <div class="formacion__courses__box">
+            <ul class="formacion__courses__list">
+              <li class="formacion__courses__item__img">
+                <img src="assets/free-code-camp-logo.svg" />
+              </li>
+              <li class="formacion__courses__item__title">
+                <h4>Front End Development Libraries</h4>
+              </li>
+              <li class="formacion__courses__item__subtitle">
+                <p>2020 - freeCodeCamp</p>
+              </li>
+            </ul>
+          </div>
+          <div class="formacion__courses__box">
+            <ul class="formacion__courses__list">
+              <li class="formacion__courses__item__img">
+                <img src="assets\alura_logo.png" />
+              </li>
+              <li class="formacion__courses__item__title"><h4>Programa ONE</h4></li>
+              <li class="formacion__courses__item__subtitle"><p>2023 - Alura</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="experiencia" id="experiencia">
+        <h2 class="experiencia__section__title">Experiencia Profesional</h2>
+        <div class="experiencia__inner">
+          <div class="experiencia__box">
+            <img class="experiencia__img" src="assets/pair_game.png" />
+            <div class="experiencia__info">
+              <h2 class="experiencia__title">Juego de pares</h2>
+              <h3 class="experiencia__text">creado con HTML, CSS y JavaScript</h3>
+            </div>
+          </div>
+          <div class="experiencia__box">
+            <img class="experiencia__img" src="assets/write_game.png" />
+            <div class="experiencia__info">
+              <h2 class="experiencia__title">Juego de escribir</h2>
+              <h3 class="experiencia__text">Challenge Argentina Programa</h3>
+            </div>
+          </div>
+          <div class="experiencia__box">
+            <img class="experiencia__img" src="assets/encriptador.png" />
+            <div class="experiencia__info">
+              <h2 class="experiencia__title">Encriptador de texto</h2>
+              <h3 class="experiencia__text">Challenge Oracle</h3>
+            </div>
+          </div>
+          <div class="experiencia__box">
+            <img class="experiencia__img" src="assets/terrarium.png" />
+            <div class="experiencia__info">
+              <h3 class="experiencia__title">Terrarium</h3>
+              <h3 class="experiencia__text">creado con HTML, CSS y JavaScript</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="formcontacto" id="contacto">
+        <img class="formcontacto__img" src="assets\contact_image.png" />
+        <div class="formcontacto__inner">
+          <div class="formcontacto__text">
+            <h2 class="formcontacto__title">Contacto</h2>
+            <h3 class="formcontacto__subtext">
+              ¿Quieres contactarme? <br />
+              Complete el siguiente formulario y me pondré en contacto con usted lo antes
+              posible.
+            </h3>
+          </div>
+          <form class="formcontacto__form" name="form">
+            <input
+              class="formcontacto__input"
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+            />
+            <input
+              class="formcontacto__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <input
+              class="formcontacto__input"
+              type="text"
+              name="asunto"
+              placeholder="Asunto"
+            />
+            <textarea
+              class="formcontacto__textarea"
+              rows="5"
+              cols="40"
+              id="mensaje"
+              name="mensaje"
+              placeholder="Mensaje"
+            ></textarea>
+            <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__inner container">
+        <p class="footer__item">
+          <strong>© 2022-2023</strong><br /><a href="/#">Luca Guerrero</a>
+        </p>
+        <p class="footer__item__social">
+          <a href="https://www.linkedin.com/in/luca-guerrero/" class="footer__icon"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/Luka-g22" class="footer__icon"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com" class="footer__icon"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </p>
+      </div>
+    </footer>
+    <script src="validacion.js"></script>
+  </body>
+</html>

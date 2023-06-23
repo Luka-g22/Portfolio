@@ -1,0 +1,71 @@
+:root {
+  --background: #16161a;
+  --blanco: #ffff;
+  --font-Raleway: "Raleway", sans-serif;
+  --font-Roboto: "Roboto", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-bg);
+  font-family: var(--font-Raleway);
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  border: 1px solid var(--color-border);
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 500;
+}
+
+i {
+  color: var(--color-text);
+}
+i:hover {
+  transition: 0.3s ease-in-out;
+  color: var(--color-secondary);
+}
+hr {
+  width: 100%;
+  color: var(--color-bg-offset);
+}
+.btn {
+  background: var(--color-bg-offset);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  font-size: 1.55rem;
+}
+.main {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  text-align: center;
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+}

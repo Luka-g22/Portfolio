@@ -1,0 +1,71 @@
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.header__icon {
+  display: flex;
+  align-items: center;
+}
+.header__icon__avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.header__icon__name {
+  font-weight: 700;
+}
+
+/*Nav*/
+.header__nav {
+  display: flex;
+}
+.header__nav > button {
+  margin-left: 1rem;
+}
+.nav__menu {
+  display: none;
+}
+.nav__menu__link {
+  margin: 1rem;
+  font-weight: 400;
+}
+.nav__color_btn {
+  order: -1;
+}
+.nav__num {
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+.nav__menu__link:hover { 
+  color: var(--color-primary-offset);
+  transition: color 0.2s linear;
+}
+
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+  .header {
+    padding: 3rem 0;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+  .nav__menu {
+    display: flex;
+  }
+  .nav__menu__list {
+    display: flex;
+  }
+  .nav__toggle_btn {
+    display: none;
+  }
+  .nav__color_btn {
+    order: 0;
+    align-self: center;
+  }
+}

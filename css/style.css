@@ -4,7 +4,9 @@
   --font-Raleway: "Raleway", sans-serif;
   --font-Roboto: "Roboto", sans-serif;
 }
-
+* {
+  transition-duration: 1s;
+}
 body {
   box-sizing: border-box;
   background-color: var(--color-bg);

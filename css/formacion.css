@@ -23,16 +23,31 @@
   flex: 1 0 0;
   padding: 2rem;
 }
-.formacion__courses__list{
+.formacion__courses__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1 0 0;
 }
-.formacion__courses__item__img img{
+.formacion__courses__item__img img {
   height: 100%;
-  width: 150px;
+  width: 30vw;
+  max-width: 300px;
 }
 .formacion__courses__item__title {
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .formacion__courses {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .formacion__courses__item__img img {
+    height: 100%;
+    width: 20vw;
+    max-width: 250px;
+  }
 }

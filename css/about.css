@@ -59,10 +59,22 @@
 /*Tablet*/
 @media (min-width: 768px) {
   .about__title {
-    font-size: 5.5rem;
+    font-size: 4rem;
   }
 }
 
 /*Desktop*/
 @media (min-width: 1024px) {
+  .about {
+    padding: 10rem 0 16rem;
+  }
+  .about__content {
+    font-size: 2rem;
+  }
+  .about__title {
+    font-size: 5rem;
+  }
+  .about__pretitle {
+    font-size: 2rem;
+  }
 }

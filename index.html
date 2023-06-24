@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/themes.css" />
     <link rel="stylesheet" href="css/hobbies.css" />
-    <link rel="stylesheet" href="css/experiencia.css" />
+    <link rel="stylesheet" href="css/proyectos.css" />
     <link rel="stylesheet" href="css/formacion.css" />
     <link rel="stylesheet" href="css/contacto.css" />
     <script
@@ -35,29 +35,40 @@
           <span class="header__icon__name"><span>Luca Guerrero</span></span>
         </a>
         <nav class="header__nav">
-          <button class="nav__toggle_btn btn" onclick="myFunction()">
+          <button class="nav__toggle_btn btn" onclick="openNav()">
             <i class="fa-solid fa-bars"></i>
           </button>
-          <div class="nav__menu">
-            <ul class="nav__menu__list">
+          <div class="nav__menu overlay" id="myNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="nav__menu__list overlay-content">
               <li class="nav__menu__link">
-                <a href="#sobre-mi"> <span class="nav__num">01</span>sobre mi</a>
+                <a href="#top" onclick="closeNav()">
+                  <span class="nav__num">01</span>sobre mi</a
+                >
               </li>
               <li class="nav__menu__link">
-                <a href="#skills"><span class="nav__num">02</span>skills</a>
+                <a href="#skills" onclick="closeNav()"
+                  ><span class="nav__num">02</span>skills</a
+                >
               </li>
               <li class="nav__menu__link">
-                <a href="#hobbies"><span class="nav__num">03</span>hobbies</a>
+                <a href="#hobbies" onclick="closeNav()"
+                  ><span class="nav__num">03</span>hobbies</a
+                >
               </li>
               <li class="nav__menu__link">
-                <a href="#formacion"><span class="nav__num">04</span>formación</a>
+                <a href="#formacion" onclick="closeNav()"
+                  ><span class="nav__num">04</span>formación</a
+                >
               </li>
               <li class="nav__menu__link">
-                <a href="#experiencia"><span class="nav__num">05</span>proyectos</a>
+                <a href="#proyectos" onclick="closeNav()"
+                  ><span class="nav__num">05</span>proyectos</a
+                >
               </li>
             </ul>
           </div>
-          <button class="nav__color_btn btn" onclick="myFunction()">
+          <button class="nav__color_btn btn" onclick="changeColor()">
             <i class="fa-solid fa-bolt"></i>
           </button>
         </nav>
@@ -71,8 +82,8 @@
             <a href="#about">Hola, mi nombre es Luca</a>
           </p>
           <p class="about__content">
-            Soy un front-end developer de Argentina en continuo aprendizaje. Actualmente estoy
-            participando en el proyecto Oracle ONE en Alura Latam.
+            Soy un front-end developer de Argentina en continuo aprendizaje. Actualmente
+            estoy participando en el proyecto Oracle ONE en Alura Latam.
           </p>
         </div>
       </section>
@@ -157,7 +168,7 @@
           <div class="formacion__courses__box">
             <ul class="formacion__courses__list">
               <li class="formacion__courses__item__img">
-                <img src="assets\alura_logo.png" />
+                <img src="assets\alura_logo3.png" />
               </li>
               <li class="formacion__courses__item__title"><h4>Programa ONE</h4></li>
               <li class="formacion__courses__item__subtitle"><p>2023 - Alura</p></li>
@@ -165,35 +176,35 @@
           </div>
         </div>
       </section>
-      <section class="experiencia" id="experiencia">
-        <h2 class="experiencia__section__title">Experiencia Profesional</h2>
-        <div class="experiencia__inner">
-          <div class="experiencia__box">
-            <img class="experiencia__img" src="assets/pair_game.png" />
-            <div class="experiencia__info">
-              <h2 class="experiencia__title">Juego de pares</h2>
-              <h3 class="experiencia__text">creado con HTML, CSS y JavaScript</h3>
+      <section class="proyectos" id="proyectos">
+        <h2 class="proyectos__section__title">Proyectos</h2>
+        <div class="proyectos__inner">
+          <div class="proyectos__box">
+            <img class="proyectos__img" src="assets/pair_game.png" />
+            <div class="proyectos__info">
+              <h2 class="proyectos__title">Juego de pares</h2>
+              <h3 class="proyectos__text">creado con HTML, CSS y JavaScript</h3>
             </div>
           </div>
-          <div class="experiencia__box">
-            <img class="experiencia__img" src="assets/write_game.png" />
-            <div class="experiencia__info">
-              <h2 class="experiencia__title">Juego de escribir</h2>
-              <h3 class="experiencia__text">Challenge Argentina Programa</h3>
+          <div class="proyectos__box">
+            <img class="proyectos__img" src="assets/write_game.png" />
+            <div class="proyectos__info">
+              <h2 class="proyectos__title">Juego de escribir</h2>
+              <h3 class="proyectos__text">Challenge Argentina Programa</h3>
             </div>
           </div>
-          <div class="experiencia__box">
-            <img class="experiencia__img" src="assets/encriptador.png" />
-            <div class="experiencia__info">
-              <h2 class="experiencia__title">Encriptador de texto</h2>
-              <h3 class="experiencia__text">Challenge Oracle</h3>
+          <div class="proyectos__box">
+            <img class="proyectos__img" src="assets/encriptador.png" />
+            <div class="proyectos__info">
+              <h2 class="proyectos__title">Encriptador de texto</h2>
+              <h3 class="proyectos__text">Challenge Oracle</h3>
             </div>
           </div>
-          <div class="experiencia__box">
-            <img class="experiencia__img" src="assets/terrarium.png" />
-            <div class="experiencia__info">
-              <h3 class="experiencia__title">Terrarium</h3>
-              <h3 class="experiencia__text">creado con HTML, CSS y JavaScript</h3>
+          <div class="proyectos__box">
+            <img class="proyectos__img" src="assets/terrarium.png" />
+            <div class="proyectos__info">
+              <h3 class="proyectos__title">Terrarium</h3>
+              <h3 class="proyectos__text">creado con HTML, CSS y JavaScript</h3>
             </div>
           </div>
         </div>

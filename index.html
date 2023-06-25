@@ -35,7 +35,7 @@
           <span class="header__icon__name"><span>Luca Guerrero</span></span>
         </a>
         <nav class="header__nav">
-          <button class="nav__toggle_btn btn" onclick="openNav()">
+          <button class="nav__toggle_btn btn" id="fix_btn" onclick="openNav()">
             <i class="fa-solid fa-bars"></i>
           </button>
           <div class="nav__menu overlay" id="myNav">
@@ -66,9 +66,14 @@
                   ><span class="nav__num">05</span>proyectos</a
                 >
               </li>
+              <li class="nav__menu__link">
+                <a href="#contacto" onclick="closeNav()"
+                  ><span class="nav__num">06</span>contactos</a
+                >
+              </li>
             </ul>
           </div>
-          <button class="nav__color_btn btn" onclick="changeColor()">
+          <button class="nav__color_btn btn" id="fix_btn_2" onclick="changeColor()">
             <i class="fa-solid fa-bolt"></i>
           </button>
         </nav>

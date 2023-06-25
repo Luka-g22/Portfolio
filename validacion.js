@@ -10,3 +10,17 @@ function closeNav() {
 function changeColor() {
   document.body.classList.toggle("dark-mode");
 }
+
+
+
+var nav_btn = document.getElementById("fix_btn");
+function fixBoton() {
+  if (window.scrollY > 100) {
+    nav_btn.classList.add("sticky");
+  } else {
+    nav_btn.classList.remove("sticky");
+  }
+}
+window.onscroll = function () {
+  fixBoton();
+};

@@ -1,8 +1,8 @@
 .hobbies {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 2rem 0 4rem;
+  align-items: center;  padding: 3rem 0;
+
 }
 .hobbies__title {
   font-size: 2rem;

@@ -39,7 +39,6 @@
 }
 .nav__menu__link:hover {
   color: var(--color-primary-offset);
-  transition: color 0.2s linear;
 }
 
 @media (max-width: 1024px) {

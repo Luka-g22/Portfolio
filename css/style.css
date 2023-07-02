@@ -5,7 +5,7 @@
   --font-Roboto: "Roboto", sans-serif;
 }
 * {
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 body {
   box-sizing: border-box;

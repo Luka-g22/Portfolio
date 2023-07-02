@@ -1,0 +1,31 @@
+.softskills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+.softskills__title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  margin: 2rem;
+}
+.softskills__line {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.softskills__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+}
+.softskills__img {
+  font-size: 5rem;
+}
+.softskills__name {
+  flex-shrink: 0;
+}

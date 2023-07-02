@@ -5,7 +5,7 @@
   gap: 0.5rem;
   align-self: center;
   text-align: left;
-  color: var(--color-bg);
+  font-weight: 400;
 }
 .formcontacto__inner {
   background: var(--color-secondary);
@@ -62,7 +62,9 @@
   padding: 10px 20px;
   text-align: center;
   border-radius: 4px;
-  margin: 4px 2px;
+  margin: 4px 2px; 
+  background: var(--color-primary);
+  color: var(--color-text);
 }
 
 /*Tablet*/

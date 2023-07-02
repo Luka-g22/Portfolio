@@ -10,7 +10,7 @@
 }
 
 .dark-mode {
-  --color-bg: #0e141b;
+  --color-bg: #0e141bf4;
   --color-bg-offset: #252526;
   --color-text: #ffffff;
   --color-text-offset: #818a91;
